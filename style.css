@@ -1,0 +1,188 @@
+/* ==========================================================================
+  CUSTOM CSS
+  ========================================================================== */
+
+* {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Debug code var_dump() PHP */
+.xdebug-var-dump {
+  text-align: center;
+  color: #fff;
+}
+
+/*
+  Custom Boostrap
+  ========================================================================== */
+.fs-22 {
+  font-size: 22px !important;
+}
+
+.bg-blue {
+  background-color: #00214A !important;
+}
+
+.bg-violet {
+  background-color: #32253F !important;
+}
+
+.shadow-text {
+  text-shadow: black 1px 0 5px;
+  ;
+}
+
+/*
+  Header
+  ========================================================================== */
+  #home header {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-image: url('./img/bg-home.webp');
+    width: 100%;
+    height: 100vh;
+  }
+
+  #home header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7f593fb2; /* couleur avec opacité */
+    z-index: 1; /* assure que le pseudo-élément est en arrière-plan */
+}
+
+/* HOME */
+#home {
+  background-color: #c29a7ffc;
+}
+
+#produit{
+  background-color: #c29a7ffc;  
+}
+  /*
+  Navbar
+  ========================================================================== */
+  .navbar {
+
+  --bs-navbar-toggler-icon-bg:
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+  --bs-navbar-toggler-border-color: rgba(255, 255, 255) !important;
+  --bs-navbar-brand-hover-color: rgba(255, 255, 255) !important;
+  --bs-navbar-color: rgba(255, 255, 255) !important;
+  --bs-navbar-hover-color: rgba(255, 255, 255) !important;
+  --bs-navbar-disabled-color: rgba(255, 255, 255) !important;
+  --bs-navbar-active-color: rgba(255, 255, 255) !important;
+  z-index: 2;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.show {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.navbar-nav .nav-link::before {
+  font-weight: 400;
+  margin-left: 5px;
+  height: px;
+  line-height: 64px;
+  background: #6188FF;
+  padding: 0px 30px;
+  border-radius: 999em;
+  background: #6c442a;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 900;
+}
+
+.navbar-nav{
+  transform: translate(-13vh, 0vh) !important;
+}
+/*
+  Produits
+  ========================================================================== */
+#products {
+  background-color: #c29a7ffc;
+}
+
+
+/*
+  Contact
+  ========================================================================== */
+#contact {
+  background-color: #c29a7ffc;
+}
+
+
+
+#contact form {
+  background: #B1653490;
+}
+
+/*
+  Footer
+  ========================================================================== */
+
+.footer {
+  position: relative;
+  background: linear-gradient(180deg, #00214A 30.38%, #004F73 100%);
+  margin-top: 35%;
+  top: 100px;
+}
+
+/* Animation vague dans le footer */
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("img/bg-blue-wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
