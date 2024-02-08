@@ -17,4 +17,5 @@ require_once __DIR__ . ('/utilities/tri-prix.php');
 
 </div>
 </section>
+<!-- footer -->
 <?php require_once __DIR__ . '/utilities/footer.php'; ?>

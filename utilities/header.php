@@ -1,7 +1,9 @@
 <?php
+// connexion à la data base
 require_once dirname(__DIR__) . ('/function/database.fn.php');
 require_once dirname(__DIR__) . ('/config/config.php');
 $conn = getPDOlink($config);
+// configuration des liens
 require_once dirname(__DIR__) . ('/config/headerConfig.php');
 ?>
 
