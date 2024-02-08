@@ -1,7 +1,5 @@
- <!-- 
- Card qui montre les infos selon le produit choisit.
+ <!-- Card qui montre les infos selon le produit choisit.
  Pour l'image on passe par le pathImg qui est le chemin d'accés aux images stocké dans la base de données -->
-
 
 <div class="mt-5" style=" display: flex; flex-direction:column; align-items: center;">
 <div class="card col text-center m-3 p-0 rounded-0 border-0" style="width: 80vh;">
@@ -21,3 +19,4 @@
   </div>
 </div>
 </div>
+

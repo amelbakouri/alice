@@ -12,3 +12,4 @@ foreach ($docteurs as $docteur) :
         </div>
     </div>
 <?php endforeach; ?>
+

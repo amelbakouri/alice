@@ -1,6 +1,6 @@
 <?php
 // Définit le domaine de base pour les pages
-$domain = 'med2/';
+$domain = 'alice/';
 
 // URL de la page d'accueil
 $index_page = $domain;

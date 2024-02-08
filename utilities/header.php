@@ -1,5 +1,7 @@
 <?php
+require_once dirname(__DIR__) . ('/function/database.fn.php');
 require_once dirname(__DIR__) . ('/config/config.php');
+$conn = getPDOlink($config);
 require_once dirname(__DIR__) . ('/config/headerConfig.php');
 ?>
 

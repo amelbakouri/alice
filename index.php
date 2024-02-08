@@ -3,8 +3,6 @@
 require_once __DIR__ . ('/utilities/header.php');
 // fonction avec requete sql pour recuperer des donnees
 require_once __DIR__ . ('/function/medecin.fn.php');
-// stock les données de la function dans $docteurs
-$docteurs = findDoctor($conn);
 ?>
 
 <!-- Section Présentation titre + paragraphe -->
@@ -24,9 +22,14 @@ $docteurs = findDoctor($conn);
 <section>
     <div class="row row-cols-1 row-cols-md-2 m-auto justify-content-center ">
         <!-- card des medecins -->
-        <?php require_once __DIR__ . ('/utilities/medecin-card.php'); ?>
+        <?php
+        // stock les données de la function dans $docteurs
+        $docteurs = findDoctor($conn);
+        require_once __DIR__ . ('/utilities/medecin-card.php');
+        ?>
 
 </section>
 
 <!-- footer -->
 <?php require_once __DIR__ . ('/utilities/footer.php'); ?>
+

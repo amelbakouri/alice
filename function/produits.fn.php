@@ -13,7 +13,8 @@ function findMedicine ($conn) {
     return $medicament;
 }
 
-// fonction qui recupere les infos et l'image lié aux medicaments mais dans l'ordre que la personne
+// fonction qui recupere les infos et l'image lié 
+// aux medicaments mais dans l'ordre que la personne
 //  aura choisis lors du tri grâce au $order
 function findBestMedicine ($conn, $order ) {
     $sql = "SELECT *
@@ -26,7 +27,8 @@ function findBestMedicine ($conn, $order ) {
     return $medicaments;
 }
 
-//fonction pour recuperer qu'une seule potion selon la page où la personne est grace au $currentID
+//fonction pour recuperer qu'une seule potion selon 
+// la page où la personne est grace au $currentID
 function findOneMedicine ($conn, $currentId) {
     $sql = "SELECT medicament.name, medicament.description,
     medicament.prix, imgmedicament.pathImg
@@ -38,3 +40,6 @@ function findOneMedicine ($conn, $currentId) {
     $medicament = $requete->fetch();
     return $medicament;
 }
+
+
+
