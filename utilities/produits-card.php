@@ -3,7 +3,7 @@
 //  stocké dans $medicament.
 // Pour l'image on passe par le pathImg qui est le chemin d'accés aux images stocké dans la base de données
  foreach ($medicaments as $medicament) : ?>
-<div class="card col text-center m-3 p-0 rounded-0 border-0" style="width: 300px;">
+<div class="card col text-center m-3 p-0 rounded-0 border-0 text-blue" style="width: 300px;">
       <img src="./img/produits/<?= $medicament["pathImg"] ?>" class="card-img-top rounded-0" alt="<?= $medicament["name"] ?>">
       <div class="card-body">
         <h5 class="card-title"><?= $medicament["name"] ?></h5>

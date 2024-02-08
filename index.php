@@ -7,7 +7,7 @@ require_once __DIR__ . ('/function/medecin.fn.php');
 
 <!-- Section Présentation titre + paragraphe -->
 <section>
-    <div class="container my-5">
+    <div class="container my-5 text-blue">
         <h2 class="d-flex justify-content-center fs-1">Présentation :</h2>
         <p class="fs-22">Bienvenue au laboratoire pharmaceutique Wonderland Pharma, un établissement unique où la science et la magie se rencontrent pour créer des médicaments extraordinaires.
             Notre équipe dévouée de chercheurs et d'alchimistes travaille sans relâche pour développer des formulations révolutionnaires qui permettent à nos clients de changer de taille, de couleur,

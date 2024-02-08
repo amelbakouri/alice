@@ -1,7 +1,7 @@
 <section class="col-12 col-sm-8 m-auto">
-  <h2 class="text-center">Formulaire de contact</h2>
+  <h2 class="text-center text-light text-blue">Formulaire de contact</h2>
   <form class="p-4 mb-5 " action="" method="GET">
-    <div class="col d-flex flex-column justify-content-center w-75 container">
+    <div class="col d-flex flex-column justify-content-center w-75 container text-light">
       <?php
       $input1 = [
         array(
